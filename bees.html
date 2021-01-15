@@ -52,13 +52,17 @@
                         </p>
                     </div>
 
+                    <p onclick="showMore()" id="show-more-1">Show More</p>
+
             </div>
 
-            <div>
-                <img src="" alt="">
+
+
+            <div class="cr-bee-trail">
+                <img src="images/bee-and-dots.png" alt="">
             </div>
 
-            <div>
+            <div class="cr-carniolan">
                 <h2>The Carniolan Bee</h2>
                 <p>
                     Carniolans from middle Europe have been a favored bee stock in the U.S. for several reasons—they are known for their hardiness in the colder climates, explosive spring build up, and above-average honey production. Generally gentle towards beekeepers—they can be worked with little smoke and protective clothing. They show good resistance to tracheal mites and are great wax comb builders.
@@ -93,7 +97,13 @@
                     </p>
                 </div>
 
+                <p onclick="showMore2()" id="show-more-2">Show More</p>
+
+
             </div>
+
+
+
         </div>
 
         <div class="cr-shop-bees">
@@ -174,6 +184,34 @@
 
     <script>
 
+
+        function showMore() {
+            var moreText = document.getElementById("cr-italian-more");
+            var itaBtn = document.getElementById("show-more-1")
+
+            if (moreText.style.display === "block") {
+                moreText.style.display = "none";
+                itaBtn.innerHTML = "Show More";
+            } else {
+                moreText.style.display = "block";
+                itaBtn.innerHTML = "Show Less";
+            }
+         }
+
+
+
+         function showMore2() {
+             var moreText2 = document.getElementById("cr-carniolan-more");
+             var carnBtn = document.getElementById("show-more-2")
+
+             if (moreText2.style.display === "block") {
+                 moreText2.style.display = "none";
+                 carnBtn.innerHTML = "Show More";
+             } else {
+                 moreText2.style.display = "block";
+                 carnBtn.innerHTML = "Show Less";
+             }
+        }
 
 
     </script>
